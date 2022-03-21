@@ -21,7 +21,7 @@ export const GroupInput = styled.section`
     }
 
     & input:hover{
-        border: solid rgba(10,10,10,.8) 1.2px;
+        border: solid black 1px;
     }
 
     & button{
@@ -35,5 +35,11 @@ export const GroupInput = styled.section`
 
     & button:hover{
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    & span{
+        color: red;
+        font-size: 1em;
+        margin: .5rem 0;
     }
 `
