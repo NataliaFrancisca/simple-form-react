@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import Form from '../components/Form';
 
-export const FormStyled = styled.form`
+export const FormStyled = styled(Form)`
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -10,12 +11,12 @@ export const FormStyled = styled.form`
 
 
     & legend{
-        margin-top: .4rem;
+        margin: .4rem 0;
         font-size: 1.4em;
     }
 
     & legend:after{
-        background: orange;
+        background: ${props => props.legendColor.hv};
         content: "";
         display: block;
         height: 3px;

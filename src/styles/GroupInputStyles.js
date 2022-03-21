@@ -16,12 +16,7 @@ export const GroupInput = styled.section`
         padding: .5rem;
         font-size: 1.2em;
         border-radius: 3px;
-        border: solid rgba(10,10,10,.5) 1px;
         background-color: transparent;
-    }
-
-    & input:hover{
-        border: solid black 1px;
     }
 
     & button{
