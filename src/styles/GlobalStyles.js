@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
@@ -11,6 +10,16 @@ export const GlobalStyles = createGlobalStyle`
 
     body, input, span, label{
         font-family: 'Dosis', sans-serif;
+        color: ${props => props.actualTheme.fg};
+    }
+
+    input{
+        border: solid ${props => props.actualTheme.fg} 1px;
+    }
+
+    body{
+        background: ${props => props.actualTheme.bg};
+        transition: all .4s linear .2s;
     }
 
 `

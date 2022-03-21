@@ -3,15 +3,14 @@ import React from "react";
 import { useForm } from "react-hook-form"
 
 import { GroupInput } from "../styles/GroupInputStyles";
-import { FormStyled } from '../styles/FormStyles';
 
-const Form  = ({typeForm}) => {
+const Form  = ({className}) => {
 
     const { register, handleSubmit, watch, formState: {errors}} = useForm();
     const onSubmit = data => console.log(data);
 
     return(
-        <FormStyled onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit)} className={className}>
 
             <legend>Create Account</legend>
 
@@ -37,7 +36,7 @@ const Form  = ({typeForm}) => {
                 <button>Subscribe</button>
             </GroupInput>
             
-        </FormStyled>
+        </form>
     )
 }
 
