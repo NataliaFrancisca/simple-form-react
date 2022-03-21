@@ -21,8 +21,6 @@ function App() {
 
   const [stateMode, setStateMode] = useState(lightModeRules);
 
-  console.log(stateMode)
-  
   return (
     <Context.Provider value={{stateMode, setStateMode, darkModeRules, lightModeRules}}>
       <AppStyles>
