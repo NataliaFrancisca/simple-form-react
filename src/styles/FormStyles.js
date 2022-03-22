@@ -16,7 +16,7 @@ export const FormStyled = styled(Form)`
     }
 
     & legend:after{
-        background: ${props => props.legendColor.hv};
+        background: rgb(182, 20, 228);
         content: "";
         display: block;
         height: 3px;
