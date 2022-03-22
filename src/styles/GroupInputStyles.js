@@ -1,10 +1,9 @@
 import styled from 'styled-components'
 
-export const GroupInput = styled.section`
+export const GroupInput = styled.div`
     display: flex;
     flex-direction: column;
     margin: .5rem 0;
-
 
     & label{
         margin-bottom: .5rem;
@@ -21,7 +20,7 @@ export const GroupInput = styled.section`
 
     & button{
         height: 40px;
-        background-color: rgb(25, 118, 210);
+        background-color: rgb(182, 20, 228);
         font-size: 1.2em;
         border-radius: 3px;
         color: rgb(250,250,250);
@@ -29,12 +28,7 @@ export const GroupInput = styled.section`
     }
 
     & button:hover{
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        box-shadow: rgb(120, 20, 228) 0px 3px 8px;
     }
 
-    & span{
-        color: red;
-        font-size: 1em;
-        margin: .5rem 0;
-    }
 `
