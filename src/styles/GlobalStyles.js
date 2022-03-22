@@ -22,4 +22,9 @@ export const GlobalStyles = createGlobalStyle`
         transition: all .4s linear .2s;
     }
 
+    & .errorMessage{
+        color: ${props => props.actualTheme.error};
+        font-size: 1em;
+        margin: .5rem 0;
+    }
 `
