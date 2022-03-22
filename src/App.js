@@ -11,15 +11,16 @@ function App() {
 
   const darkModeRules = {
     name: "dark_mode",
-    styleRules: {fg: '#363636', bg: "#FFFAFA", hv: "orangered"}
+    styleRules: {fg: "#DCDCDC", bg: '#1C1C1C', hv: "lightblue", error: "#FF4E56"}
+   
   }
 
   const lightModeRules = {
       name: "light_mode",
-      styleRules: {fg: "#DCDCDC", bg: '#1C1C1C', hv: "lightblue"}
+      styleRules: {fg: '#363636', bg: "#FFFAFA", hv: "orangered", error: "#CD1C24"}
   }
-
-  const [stateMode, setStateMode] = useState(lightModeRules);
+  
+   const [stateMode, setStateMode] = useState(lightModeRules);
 
   return (
     <Context.Provider value={{stateMode, setStateMode, darkModeRules, lightModeRules}}>
